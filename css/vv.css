@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+              font-family: "Bebas Neue", serif;
+            text-align: center;
+            margin: 0;
+            color: #ffffff;
+            padding: 20px;
+            background-color: #000000;}
+        h1 {
+            margin-bottom: 20px;
+            color: #00A1E4;}
+        hr {
+            width: 50%;
+            margin: 20px auto;
+            border-color: #00A1E4; }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .section {
+            width: 30%; 
+            margin: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            padding: 15px; 
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.05); }
+                .section h2 {
+                    color: #00A1E4; }
+                     .section p {
+                    color: #000000;
+                }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .feature-title {
+            font-size: 2.3em;
+            margin-top: 10px;
+            color: #00A1E4;
+        }
+        .feature-description {
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+        .full-width-container {
+       margin-top: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+        }
+        .full-width-section {
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+            margin: 10px;
+        }
+        .new-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .new-section-text {
+            width: 60%;
+            text-align: left;
+            padding: 20px;
+            color: white;
+        }
+          .new-section-text h2 {
+    font-size: 50px;
+    color: #00A1E4;
+        }
+            .new-section-text p {
+    font-size: 30px;
+        }
+        .new-section img {
+            width: 60%;
+            height: auto;
+        }
+        .main-title {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #00A1E4;
+        }
+         .main-title p {
+           
+            color: #ffffff;
+        }
+        .faq-title {
+            font-size: 2em;
+            margin-top: 40px;
+            color: #00A1E4;
+        }
+        .blue-text {
+            color: #00A1E4;
+            font-size: 1.5em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .faq-answer {
+            display: none;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2em;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(255,255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .question-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* استعلامات الوسائط لتحسين العرض على الهواتف المحمولة */
+        @media (max-width: 768px) {
+            .section, .full-width-section {
+                width: 90%; /* جعل العرض 90% على الشاشات الصغيرة */
+                margin: 10px auto; /* توسيط العناصر */
+            }
+            .navbar a {
+                font-size: 1em; /* تقليل حجم النص في شريط التنقل */
+                margin: 0 10px; /* تقليل المسافة بين الروابط */
+            }
+            .feature-title {
+                font-size: 1.2em; /* تقليل حجم عنوان الميزة */
+            }
+            .feature-description {
+                font-size: 0.9em; /* تقليل حجم وصف الميزة */
+            }
+            .main-title, .faq-title {
+                font-size: 1.5em; /* تقليل حجم العناوين الرئيسية */
+            }
+            .blue-text {
+                font-size: 1.2em; /* تقليل حجم النص الأزرق */
+            }
+        }
+/* Start Footer */
+.footer {
+  background-color: #000000;
+  padding: 40px 0 0;
+  border-top: 0.5px solid #444;
+}
+@media (max-width: 700px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.footer .box h3 {
+  color: #024caa;
+  font-size: 50px;
+  margin: 0 0 20px;
+}
+.footer .box .social {
+  display: flex;
+  margin: 20px;
+}
+@media (max-width: 767px) {
+  .footer .box .social {
+    justify-content: center;
+  }
+}
+.footer .box .social li {
+  margin-right: 10px;
+}
+.footer .box .social li a {
+  background-color: #ffffff;
+  color: #b9b9b9;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  text-decoration: none;
+  height: 50px;
+  font-size: 20px;
+  transition: var(--main-transition);
+}
+
+.footer .box .text {
+  line-height: 2;
+  width: 218px;
+  color: #ffffff;
+  margin: 0px;
+  font-size: 30px;
+}
+.footer .box .links li {
+  padding: 15px 0;
+
+  transition: var(--main-transition);
+}
+
+.footer .box .links li:hover {
+  padding-left: 10px;
+}
+.footer .box .links li:hover a {
+  color: #024caa;
+}
+.footer .box .links li a {
+  color: #b9b9b9;
+  text-decoration: none;
+  transition: var(--main-transition);
+}
+
+.footer .box .line {
+  display: flex;
+  align-items: center;
+  color: #b9b9b9;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .footer .box .line {
+    flex-direction: column;
+  }
+}
+.footer .box .line i {
+  font-size: 25px;
+  color: #024caa;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .footer .box .line i {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+.footer .box .line .info {
+  line-height: 1.7;
+  flex: 1;
+}
+.footer .box .line .info span {
+  display: block;
+}
+.footer .footer-gallery img {
+  width: 78px;
+  border: 3px solid white;
+  margin: 2px;
+}
+.footer .copyright {
+  padding: 25px 0;
+  text-align: center;
+  color: white;
+  margin: 50px 0 0;
+  border-top: 1px solid #444;
+}
+/* End Footer */
